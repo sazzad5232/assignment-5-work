@@ -22,9 +22,86 @@
   </head>
   <body>
     <section>
+      <!-- nav bar section -->
       <header>
-        <nav></nav>
+        <nav class="flex justify-between bg-[white] w-11/12 h-[100px] mx-auto">
+          <div class="flex gap-2 items-center">
+            <img class="h-[50px] w-[50px]" src="./assets/logo.png" alt="" />
+            <h1 class="text-[#006747] font-bold">Emergency<br />Service</h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <div
+              class="btn flex p-1 justify-evenly bg-[#41ff6b1a] border-2 rounded-4xl h-[37px] w-[100px]"
+            >
+              <span>2</span
+              ><img class="w-7 h-7" src="./assets/heart.png" alt="" />
+            </div>
+            <div
+              class="btn flex p-1 justify-evenly bg-[#41ff6b1a] border-2 rounded-4xl h-[37px] w-[92px]"
+            >
+              <span>200</span
+              ><img class="w-7 h-7" src="./assets/coin.png" alt="" />
+            </div>
+            <div>
+              <button
+                class="btn text-white bg-[#00A63E] hover:bg-[white] hover:text-black rounded-4xl h-[37px] w-[100px]"
+              >
+                <span>2</span> Copy
+              </button>
+            </div>
+          </div>
+        </nav>
       </header>
     </section>
+
+    <main>
+      <!-- banner section -->
+      <div
+        class="h-[239px] flex justify-center flex-col items-center"
+        style="
+          background: linear-gradient(
+            90deg,
+            rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),
+            rgba(0, 103, 71, 1) 50%,
+            rgba(1, 50, 35, 1) 100%
+          );
+        "
+      >
+        <img src="./assets/logo.png" class="w-[92px] h-[92px]" alt="" />
+        <h2 class="text-white text-[40px] font-bold">
+          Emergency Service Directory
+        </h2>
+        <p class="text-white text-[20px] font-semibold">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+      <!-- all service con -->
+      <section id="banner"></section>
+      <section
+        id="service-con"
+        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8"
+      >
+        <section class="service-box border-2 bg-green-100 col-span-9">
+          <div class="service-box-item">
+            <div><img src="" alt="" /></div>
+            <h1>National Emergency Number</h1>
+            <p>National Emergency</p>
+            <h3>999</h3>
+            <button class="btn btn-sm">All</button><br />
+            <button class="btn btn-soft">Default</button>
+            <button class="btn btn-success">Success</button>
+          </div>
+        </section>
+        <aside class="bg-yellow-100 col-span-3" id="service-call-history-box">
+          <h1><i class="fa-regular fa-clock"></i> Call History</h1>
+          <button
+            class="btn text-white bg-[#00A63E] rounded-4xl h-[37px] w-[84px]"
+          >
+            Clear
+          </button>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>
