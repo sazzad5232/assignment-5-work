@@ -25,9 +25,9 @@
       <!-- nav bar section -->
       <header>
         <nav
-          class="flex flex-col pb-1.5 md:flex-row justify-between bg-[white] w-11/12 h-auto md:h-[100px] mx-auto md:p-0 gap-3 md:gap-0"
+          class="flex flex-col pb-2 md:flex-row justify-between bg-[white] w-11/12 h-auto md:h-[100px] mx-auto md:p-0 gap-3 md:gap-0"
         >
-          <div class="flex gap-2 items-center justify-center p-2">
+          <div class="flex gap-2 items-center justify-center p-2 pb-0.5">
             <img class="h-[50px] w-[50px]" src="./assets/logo.png" alt="" />
             <h1 class="text-[#006747] font-bold">Emergency<br />Service</h1>
           </div>
@@ -413,10 +413,12 @@
           </section>
           <!-- call history -->
           <aside
-            class="bg-[White] flex justify-between col-span-1 md:col-span-3 p-2 rounded-xl shadow"
+            class="bg-[White] flex items-center md:items-start justify-between col-span-9 md:col-span-3 p-2 rounded-xl shadow"
             id="service-call-history-box"
           >
-            <h1 class="text-[16px] font-bold">
+            <h1
+              class="text-[16px] font-bold flex items-center gap-2 md:text-[12px]"
+            >
               <i class="fa-regular fa-clock"></i> Call History
             </h1>
             <button
