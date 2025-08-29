@@ -10,7 +10,7 @@ const loveCount = document.getElementById("love-count-box");
 const heartButton = document.querySelectorAll(".heart-btn");
 for (let i = 0; i < heartButton.length; i++) {
   heartButton[i].addEventListener("click", function (e) {
-    e.preventDefault;
+    e.preventDefault();
     loveCount.innerText = parseInt(loveCount.innerText) + 1;
   });
 }
@@ -25,7 +25,7 @@ const btns = document.querySelectorAll(".call-btn");
 for (const calBtn of btns) {
   console.log(calBtn);
   calBtn.addEventListener("click", function (e) {
-    e.stopPropagation();
+    e.preventDefault();
     const card = calBtn.closest(".service-box-item");
     // console.log(card);
     const name = card.querySelector(".name").textContent;
@@ -33,7 +33,6 @@ for (const calBtn of btns) {
     const number = card.querySelector(".number").textContent;
     console.log(number);
 
-    // const historyBox = document.getElementById("service-call-history-box");
     if (count < 20) {
       alert(
         "❌You don't have enough coins to make call, you need at least 20 coins to make call.Thank You😊"
@@ -81,5 +80,3 @@ copyBtns.forEach((btn) => {
     copyConSpan.textContent = parseInt(copyConSpan.textContent) + 1;
   });
 });
-
-n;
