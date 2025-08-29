@@ -36,7 +36,7 @@ for (const calBtn of btns) {
     // const historyBox = document.getElementById("service-call-history-box");
     if (count < 20) {
       alert(
-        "❌You don't have enough coins to make call, you need at lest 20 coins to make call.Thank You😊"
+        "❌You don't have enough coins to make call, you need at least 20 coins to make call.Thank You😊"
       );
       return;
     }
@@ -71,3 +71,15 @@ for (const calBtn of btns) {
     });
   });
 }
+const copyConSpan = document.getElementById("copy-count");
+const copyBtns = document.querySelectorAll(".btn-copy");
+copyBtns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const card = btn.closest(".service-box-item");
+    const number = card.querySelector(".number").textContent;
+    navigator.clipboard.writeText(number);
+    copyConSpan.textContent = parseInt(copyConSpan.textContent) + 1;
+  });
+});
+
+n;
